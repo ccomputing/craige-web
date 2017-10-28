@@ -1,6 +1,4 @@
 "use strict";
-
-
 jQuery(document).ready(function ($) {
 	$(window).load(function () {
 		$(".loaded").fadeOut();
@@ -25,34 +23,33 @@ jQuery(document).ready(function ($) {
             }
         }
     });
-	
 
 	/*---------------------------------------------*
      * Menu Background Change
      ---------------------------------------------*/
-	
+
 	var windowWidth = $(window).width();
     if (windowWidth > 757) {
 
-        
-          
+
+
             $(window).scroll(function () {
                 if ($(this).scrollTop() >200) {
                     $('.navbar').fadeIn(200);
                     $('.navbar').addClass('menu-bg');
 
                 } else {
-                    
+
                     $('.navbar').removeClass('menu-bg');
                 }
             });
-        
+
     }
 		$('#bs-example-navbar-collapse-1').localScroll();
-		
+
 	/*---------------------------------------------*
      * Scroll Up
-     ---------------------------------------------*/	
+     ---------------------------------------------*/
 		$(window).scroll(function(){
         if ($(this).scrollTop() > 600) {
             $('.scrollup').fadeIn('slow');
@@ -60,13 +57,13 @@ jQuery(document).ready(function ($) {
             $('.scrollup').fadeOut('slow');
         }
 		});
-		
+
 		$('.scrollup').click(function(){
 			$("html, body").animate({ scrollTop: 0 },1000);
 			return false;
 		});
-		
-	
+
+
 
 
     /*---------------------------------------------*
@@ -78,7 +75,7 @@ jQuery(document).ready(function ($) {
 
 
     /*---------------------------------------------*
-     * Counter 
+     * Counter
      ---------------------------------------------*/
 
 //    $('.statistic-counter').counterUp({

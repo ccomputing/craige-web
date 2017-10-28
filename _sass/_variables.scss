@@ -1,0 +1,20 @@
+$primary: #279bf4;
+$secondry: #7eabff;
+$ternary: #787dde;
+$quaternary: #9270ff;
+$quinary: #9acaff;
+$senary: #35a9fb;
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
